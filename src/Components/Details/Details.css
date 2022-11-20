@@ -102,6 +102,11 @@
   .card__slug {
     margin-bottom: 1.25rem;
     color: rgba(255, 255, 255, 0.95);
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+    white-space: pre-wrap;
   }
   .card__btn {
     display: inline-block;

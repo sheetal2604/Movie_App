@@ -1,0 +1,86 @@
+.MovieCardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .MovieListCard {
+    height: 300px;
+    width: 250px;
+    box-shadow: 3px 6px 12px 3px #888888;
+    position: relative;
+    margin: 10px;
+  }
+  .MovieList{
+    text-align: center;
+  }
+  .MovieListCard img {
+    width: 100%;
+    height: 300px;
+  }
+  
+  .MovieListImageLayer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    transition: 0.5s;
+  }
+  .MovieListImageLayer:hover {
+    background: #0000007a;
+    opacity: 1;
+    transition: 0.5s;
+  }
+  
+  .MovieListImageLayer p,
+  h3 {
+    color: white;
+    font-weight: bolder;
+  }
+  
+  /* *************************************Pagination********************************************* */
+  
+  .pagination {
+    /* margin: 15px auto; */
+    display: flex;
+    list-style: none;
+    outline: none;
+    justify-content: center;
+    padding: 40px 0px 50px 0px;
+  }
+  .pagination > .active > a {
+    background-color: #47ccde;
+    border-color: #47ccde;
+    color: #fff;
+  }
+  .pagination > li > a {
+    border: 1px solid #47ccde;
+    padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
+  }
+  .pagination > .active > a,
+  .pagination > .active > span,
+  .pagination > .active > a:hover,
+  .pagination > .active > span:hover,
+  .pagination > .active > a:focus,
+  .pagination > .active > span:focus {
+    background-color: #47ccde;
+    border-color: #47ccde;
+    outline: none;
+  }
+  .pagination > li > a,
+  .pagination > li > span {
+    color: #47ccde;
+  }
+  .pagination > li:first-child > a,
+  .pagination > li:first-child > span,
+  .pagination > li:last-child > a,
+  .pagination > li:last-child > span {
+    border-radius: unset;
+  }
+  
